@@ -1,0 +1,288 @@
+/* FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&family=Oswald&display=swap');
+
+body{
+    margin: 0px;
+}
+
+
+/* Navbar */
+#navbar{
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#navbar ul li{   
+    list-style: none;
+    margin: 7px 5px;
+}
+
+#navbar ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    color: aqua;
+    padding: 10px 25px;
+}
+
+#navbar ul li a:hover{
+    color: deeppink;
+}
+
+#logo{
+    margin: 0;
+}
+
+#logo img{
+    padding: 2px 0px;
+    padding-left: 10px;
+    height: 66px;
+}
+
+.dropDown{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    top: 22px;
+}
+
+.line{
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    margin: 5px;
+}
+
+/* SECTION */
+/* SLIDER */
+.slider{
+    width: 100%;
+    height:750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image{
+    width:100%;
+    height:750px;
+}
+
+#image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider h1{
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+}
+
+.slider h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ABOUT TEXT */
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: red;
+    font-family: 'Oswald', sans-serif;
+}
+
+#about h2{
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#about h3{
+    margin-top: 2px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.aboutSection{
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    height:550px;
+    display: flex;
+    align-items: center;
+}
+
+#bgImg{
+    width:100%;
+    height:550px;
+}
+
+#bgImg img{
+    width:100%;
+    height:100%;
+    opacity: 0.8;
+    object-fit: cover;
+    object-position: center;
+}
+
+.aboutText{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 550px;
+    width: 100%;
+}
+
+.aboutText h2{
+    font-size: 60px;
+    margin: 20px 0px;
+}
+
+.aboutText p{
+    font-size: 22px;
+    margin: 10px 150px;
+}
+
+.aboutText a{
+    color: red;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 5px auto;
+    width: 90px;
+    border-bottom: 2px solid red;
+    height: 30px;
+}
+
+.aboutText a:hover{
+    border-bottom: 4px solid red;
+}
+
+/* BRANCHES */
+#branches{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#branches h1{
+    font-size: 40px;
+    margin: 15px;
+}
+
+#branch-1, #branch-2{
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    font-size: 23px;
+    background-color: black;
+    color: aqua;
+    display: flex;
+    margin: 10px;
+    height: 150px;
+    width: 30%;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.cards:hover{
+    font-size: 25px;
+    cursor: pointer;
+    color: deeppink;
+}
+
+
+/* FOOTER */
+footer div{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 990px){
+    /* NAVBAR */
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .visibilityNav{
+        visibility: hidden;
+    }
+
+    .hNav{
+        height: 73px;
+    }
+
+    .dropDown{
+        display: block;
+    }
+
+    /* SECTION  */
+    /* SLIDER */
+    .slider h1{
+        text-align: center;
+    }
+
+    /* ABOUT SECTION  */
+    #about{
+        text-align: center;
+    }
+
+    .aboutText h2{
+        margin: 0px;
+    }
+
+    .aboutText p{
+        font-size: 17px;
+        overflow: auto;
+        margin: 0px 5px;
+    }
+
+    .aboutText a{
+        color: red;
+        font-size: 17px;
+        border-bottom: 0px;
+    }
+
+    /* BRANCHES */
+    #branches h1{   
+        margin: 5px;
+    }
+
+    .cards{
+        font-size: 17px;
+        margin: 5px;
+        height: 120px;
+    }
+}

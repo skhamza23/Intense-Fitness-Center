@@ -1,0 +1,195 @@
+/* FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&family=Oswald&display=swap');
+
+body{
+    margin: 0px;
+}
+
+
+/* Navbar */
+#navbar{
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#navbar ul li{   
+    list-style: none;
+    margin: 7px 5px;
+}
+
+#navbar ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    color: aqua;
+    padding: 10px 25px;
+}
+
+#navbar ul li a:hover{
+    color: deeppink;
+}
+
+#logo{
+    margin: 0;
+}
+
+#logo img{
+    padding: 2px 0px;
+    padding-left: 10px;
+    height: 66px;
+}
+
+.dropDown{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    top: 22px;
+}
+
+.line{
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    margin: 5px;
+}
+
+
+/* SECTION */
+section{
+    background-color: gainsboro;
+    margin: 0px;
+    text-align: center;
+}
+
+section h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    margin: 0px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: black;
+    padding: 10px;
+}
+
+.grid-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.grid-items{
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-items h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    margin: 10px;
+}
+
+
+.grid-items p{
+    font-family: 'Bree Serif', serif;
+    margin: 5px;
+    font-size: 22px;
+}
+
+.para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+    display: none;
+}
+
+/* FOOTER */
+footer div{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 990px){
+    /* NAVBAR */
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .visibilityNav{
+        visibility: hidden;
+    }
+
+    .hNav{
+        height: 73px;
+    }
+
+    .dropDown{
+        display: block;
+    }
+
+
+    /* SECTION  */
+    section h1{
+        font-size: 60px;
+    }
+
+    .grid-items h1{
+        font-size: 30px;
+        margin: 5px;
+    }
+
+    .grid-items p{
+        font-size: 17px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    section h1{
+        font-size: 50px;
+    }
+
+    .grid-container{
+        display: block;
+    }
+
+    .grid-items{
+        padding: 5px;
+    }
+
+    hr{
+        display: block;
+    }
+}

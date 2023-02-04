@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>CONTACT US</title>
+</head>
+
+<body>
+    <nav id="navbar" class="hNav">
+        <div id="logo">
+            <img src="photos/logo.png" alt="IFC">
+        </div>
+        <ul class="visibilityNav navList">
+            <li><a href="/">Home</a></li>
+            <li><a onclick="scrollToDiv()">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+        <div class="dropDown">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <img src="photos/contactbg.jpg">
+            <div id="heading">
+                <h2>GET IN TOUCH</h2>
+                <h1>CONTACT US</h1>
+            </div>
+        </div>
+
+        <div class="mainArea">
+            <div class="conForm">
+                <h1>BOOK YOUR VISIT NOW!!</h1>
+                <form action="/contact" id="contact" method="post">
+                    <input type="text" id="name" class="design" name="name" placeholder="Name" required>
+                    <input type="text" id="phone" class="design" name="phone" placeholder="Phone Number"
+                        title="Only numbers allowed!" minlength="10" maxlength="12" required>
+                    <input type="text" id="email" class="design" name="email" placeholder="Email Address" required>
+                    <select name="branch" id="branch" class="design" required>
+                        <option value>Branch</option>
+                        <option value="seawoods">Seawoods</option>
+                        <option value="kharghar">Kharghar</option>
+                        <option value="panvel">Panvel</option>
+                        <option value="airoli">Airoli</option>
+                        <option value="vashi">Vashi</option>
+                        <option value="andheri">Andheri</option>
+                    </select>
+                    <button type="submit" id="submitBtn" class="design">Submit</button>
+                </form>
+            </div>
+
+            <div class="conBtn">
+                <h1>CONTACT US</h1>
+                <div>
+                    <div class="conDetails">
+                        <a href="">Call Now : 022-XXXX-XXXX</a>
+                    </div>
+                    <div class="conDetails">
+                        <a href="">Email Us : Ifc@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            All Rights Reserved! | ©IntenseFitnessCenter
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
