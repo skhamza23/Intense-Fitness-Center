@@ -1,6 +1,10 @@
 /* FONTS  */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&family=Oswald&display=swap');
 
+*{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0px;
 }
@@ -260,12 +264,13 @@ footer div{
     }
 
     .aboutText h2{
+        font-size: 50px;
         margin: 0px;
     }
 
     .aboutText p{
         font-size: 17px;
-        overflow: auto;
+        /* overflow: auto; */
         margin: 0px 5px;
     }
 
@@ -284,5 +289,9 @@ footer div{
         font-size: 17px;
         margin: 5px;
         height: 120px;
+    }
+
+    .cards:hover{
+        font-size: 17px;
     }
 }

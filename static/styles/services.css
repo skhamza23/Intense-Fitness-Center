@@ -1,6 +1,10 @@
 /* FONTS  */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&family=Oswald&display=swap');
 
+*{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0px;
 }
