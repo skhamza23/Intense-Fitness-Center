@@ -34,7 +34,7 @@ const Contact = mongoose.model('Contact', contactSchema);
 app.post('/contact', (req, res) => {
     const details = new Contact(req.body);
     details.save().then(() => {
-        res.send("Thank You! Your details have been saved");
+        res.json({message: "Thank you! Your details have been saved... We'll reach to u shortly!"});
     }).catch(() => {
         res.status(400).send("Something went wrong");
     });
