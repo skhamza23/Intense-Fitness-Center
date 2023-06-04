@@ -36,7 +36,7 @@ app.post('/contact', (req, res) => {
     details.save().then(() => {
         res.json({message: "Thank you! Your details have been saved... We'll reach to u shortly!"});
     }).catch(() => {
-        res.status(400).send("Something went wrong");
+        res.status(400).json({message:"Something went wrong"});
     });
 });
 
