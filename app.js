@@ -20,6 +20,8 @@ mongoose.connect(DB, {
     console.log('Connection Successful!')
 }).catch((err) => console.log('No Connection'));
 
+mongoose.set('strictQuery', false);
+
 const contactSchema = new mongoose.Schema({
     name: String,
     phone: String,
