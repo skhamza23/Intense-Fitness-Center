@@ -15,12 +15,15 @@ app.use(express.static(staticPath));
 const DB = process.env.DATABASE;
 
 mongoose.connect(DB, {
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
 }).then(() => {
     console.log('Connection Successful!')
 }).catch((err) => console.log('No Connection'));
 
-mongoose.set('strictQuery', false);
+mongoose.set('strictQuery', true);
 
 const contactSchema = new mongoose.Schema({
     name: String,
